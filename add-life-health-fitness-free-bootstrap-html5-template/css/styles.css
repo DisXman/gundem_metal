@@ -199,8 +199,15 @@ color: #020202;
 background: #FFF;
 }
 .navbar-nav>li {
+  display: flex;
+  align-self: center;
+  position: relative;
 }
- 
+
+.navbar-nav>li>a {
+  font-size: 20px;
+  top: 40px;
+}
 
 @media only screen and (min-width: 768px) {
   #main-nav.navbar-default { 
@@ -264,9 +271,9 @@ background: #FFF;
 
 #hero-banner{
   overflow: hidden;
-  height: 700px;
-  background: url('../images/banner/banner.jpg');
-  background-size:cover;
+  height: 900px;
+  background: url('../resimler/ısın_lazer.webp');
+  background-size: contain;
   color:#fff;
 }
 #hero-banner.item {
@@ -586,8 +593,10 @@ margin: 0 8px;
   padding: 100px 0;
   background: #07080A;
   background: url('../images/img2.jpg');    
-  background-size: cover;  };
-}
+  background-size: cover;  
+};
+
+
 #about .column-title{
 color:#fff;
 }
@@ -946,3 +955,32 @@ margin: 9px auto;
 padding: 7px 0 0;
 }
 }
+/* NAVBARDAKİ LOGO */
+.navbar-brand img{
+  width: 150px;
+  object-fit: contain;
+}
+
+/*navbar üstü iletişim kısmı*/
+
+.contactInfo{
+  background: rgb(0, 65, 160);
+  z-index: 10000;
+  }
+  .contact-area{
+  float:right;
+  padding:15px 0 5px;
+  }
+  .contact-area ul li {
+  display: inline-block;
+  margin-left: 40px;
+  color: #3C3D42;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400px;
+  color:#fff;
+  }
+  .contact-area ul li i{
+  margin-right:10px;
+  } 
+  
