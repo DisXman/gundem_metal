@@ -277,7 +277,8 @@ color: #07f84f;
   overflow: hidden;
   height: 900px;
   background: url('../resimler/ısın_lazer.webp');
-  background-size: contain;
+  background-size: cover;
+  background-position: center -200px;
   color:#fff;
 }
 #hero-banner.item {
@@ -297,8 +298,7 @@ color: #07f84f;
 #hero-banner h2 {
   margin-top: 299px;
   font-size: 39px;
-  line-height: 49px; 
-
+  line-height: 49px;
   text-align: right;  
 }
 #hero-banner h2 b{
@@ -306,26 +306,10 @@ color:#F9690E;
 }
 #hero-banner p { 
   font-size: 22px; 
-margin-bottom:20px;
-line-height:35px; 
-
-  text-align: right;}
-#hero-banner a{
-width: 150px;
-margin: 0;
-display: block;
-background: transparent;
-border: 2px solid #fff;
-float: right;
-}
-#hero-banner a:hover{
-text-align: center;
-width: 150px;
-margin: 0 auto;
-display: block;
-background: #F9690E;
-border: 2px solid #F9690E;
-color: #FFF;
+  margin-bottom:20px;
+  line-height:35px; 
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #hero-banner.banner-inner h2 > span {
   color: #45aed6;
@@ -961,9 +945,51 @@ padding: 7px 0 0;
 }
 /* NAVBARDAKİ LOGO */
 .navbar-brand img{
-  width: 100px;
+  width: 120px;
   object-fit: contain;
+  position: absolute;
+  top: 50px;
 }
 
 /*navbar üstü iletişim kısmı*/
 
+
+/* İletişim kutusu stilleri */
+.contact-box {
+  background-color: gray;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  /* position: fixed; */
+  width: 100%;
+  top: 70px; /* Navbar'ın hemen altına yerleştir */
+  z-index: 20; /* İletişim kutusunun navbar'ın önünde olması için daha yüksek z-index */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /*Hafif gölge etkisi */
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  #hero-banner{
+    overflow: hidden;
+    height: 400px;
+    background: url('../resimler/ısın_lazer.webp');
+    background-size: cover;
+    color:#fff;
+  }
+  .navbar-brand img{
+    width: 80px;
+    object-fit: contain;
+    position: absolute;
+    top: 50px;
+  }
+  #hero-banner .banner-inner .container h2{
+    position: absolute;
+    top: 0;
+  }
+  #hero-banner .banner-inner .container p{
+    z-index: -1;
+  }
+
+  
+}
