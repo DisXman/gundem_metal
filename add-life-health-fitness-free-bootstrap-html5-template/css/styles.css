@@ -276,7 +276,7 @@ color: #07f84f;
 #hero-banner{
   overflow: hidden;
   height: 900px;
-  background: url('../resimler/ısın_lazer.webp');
+  background: url('../resimler/anafoto.jpg');
   background-size: cover;
   background-position: center -200px;
   color:#fff;
@@ -956,7 +956,7 @@ padding: 7px 0 0;
 
 /* İletişim kutusu stilleri */
 .contact-box {
-  background-color: gray;
+  background-color: rgb(5, 69, 126);
   color: #000;
   padding: 10px;
   text-align: center;
