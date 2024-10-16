@@ -223,7 +223,7 @@ color: #07f84f;
     border-bottom: 4px solid transparent;
 }
   .navbar-default .navbar-nav>li>a {
-	color: black;
+	color: rgb(255, 255, 255);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5rem;
 	}
@@ -401,8 +401,10 @@ padding-top: 10px;
 #portfolio {
   padding: 100px 0;
   background: #FFFFFF;
-  background: url('../images/img4.jpg');
+  background: url('../resimler/makinelerimiz_ba.jpg');
   background-size: cover;
+  background-position: center -250px;
+
 }
 #portfolio .portfolio-filter {
   list-style: none;
@@ -471,8 +473,7 @@ padding-top: 10px;
   line-height: 36px;
   text-align: center;
   color: #F9690E;
-  display:block;
-  text-align: center;
+  display: block;
 
   margin: 45px auto;
   font-size: 26px;
@@ -481,6 +482,9 @@ padding-top: 10px;
   padding: 10px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.53);
+}
+#portfolio .portfolio-item .portfolio-item-inner .portfolio-info .preview i {
+  
 }
 #portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
@@ -992,4 +996,11 @@ padding: 7px 0 0;
   }
 
   
+}
+@media (max-width:768px){
+  #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
