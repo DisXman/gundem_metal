@@ -53,11 +53,16 @@ hr {
 .section-header {
   margin-bottom: 50px;
 }
-.section-header p{
+.section-header h3{
 text-align:center;
+font-size: 40px;
+color:  #F9690E;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-shadow: 5px 5px 4px gray;
+
 }
 .section-header .section-title {
-  font-size: 44px;
+  font-size: 50px;
   color: #F9690E;
   position: relative;
   padding-bottom: 20px;
@@ -562,11 +567,15 @@ margin-bottom: 15px;
   background-size: cover;
 }
 #testimonial h2{
-color:#fff;
+color: #F9690E;
 }
 #testimonial h4 {
   color: #fff;
   margin-bottom: 8px;
+}
+#testimonial p {
+  font-size: 2.2rem;
+  text-align: center ;
 }
 #testimonial small {
   display: block;
@@ -850,6 +859,13 @@ color: #FFFFFF;
  padding: 50px;
  margin-bottom: 50px;
 }
+.contact-info .instagram h3{
+  text-align: left;
+}
+.contact-info .instagram a {
+  color: #E1306C;
+  font-size: 50px; 
+}
 .contact-info address {
 margin-bottom: 20px;
 font-style: normal;
@@ -977,7 +993,7 @@ padding: 7px 0 0;
   #hero-banner{
     overflow: hidden;
     height: 400px;
-    background: url('../resimler/ısın_lazer.webp');
+    background: url('../resimler/anafoto.jpg');
     background-size: cover;
     color:#fff;
   }
@@ -998,9 +1014,20 @@ padding: 7px 0 0;
   
 }
 @media (max-width:768px){
+/* fotoğraflardaki göz ikonunun responsive de ortaya gelmesi  */
   #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  /* burada bitiyor ikon işi*/
+  /* instagram logosu büyüttük */
+  .contact-info .instagram a i{
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  #portfolio {
+    background: url('../resimler/makinelerimiz_ba.jpg');
+    background-size: cover;
   }
 }
