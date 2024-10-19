@@ -563,7 +563,7 @@ margin-bottom: 15px;
   background-size: cover;
   padding: 100px 0;
   color: #fff;
-  background: url('../images/img3.jpg');
+  background: url('../resimler/hizmetlerimiz_arka.jpg.crdownload');
   background-size: cover;
 }
 #testimonial h2{
@@ -666,11 +666,11 @@ color:#fff;
 	-webkit-transition:all .5s ease;
 	-moz-transition:all .5s ease;
 	transition:all .5s ease;
-	font-size: 14px;
+	font-size: 18px;
 	background: rgba(0, 0, 0, 0.39);
 
-	color: #919191;
-line-height: 22px;
+	color: white;
+  line-height: 22px;
 
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.39);
@@ -686,12 +686,17 @@ line-height: 22px;
 	/* border-right: 22px solid transparent; */
 }
 .single-testimonial img{
-	border-radius: 50%;
-	opacity: 0.6;
+	/* border-radius: 50%; */
+	opacity: 1;
+  width: 35rem;
+  height: 20rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .single-testimonial h5{
 	padding: 8px 0 0px;
-	font-size: 16px;
+	font-size: 27px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 	color: #F9690E;
 }
  
@@ -760,7 +765,7 @@ margin: 0;
 #business-stats h2,
 #business-stats h3,
 #business-stats h4 {
-  color: #151313;
+  color: #F9690E;
 }
 #business-stats strong {
   display: block;
@@ -772,7 +777,7 @@ margin: 0;
   height: 140px;
   font-size: 24px;
   line-height: 140px;
-  border: 4px solid #F9690E;
+  border: 4px solid #0000002f;
   border-radius: 100px;
   margin-bottom: 20px;
 }
