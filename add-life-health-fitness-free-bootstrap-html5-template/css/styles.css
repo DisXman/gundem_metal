@@ -563,10 +563,10 @@ margin-bottom: 15px;
   background-size: cover;
   padding: 100px 0;
   color: #fff;
-  background: url('../resimler/hizmetlerimiz_arka.jpg');
+  background:/* url('../resimler/hizmetlerimiz_arka.jpg');*/#7c92a6;
   background-size: cover; 
 }
-#testimonial h2{
+#testimonial h2{ 
 color: #F9690E;
 }
 #testimonial h4 {
