@@ -1044,4 +1044,18 @@ padding: 7px 0 0;
     background-size: cover;
     background-position: -800px 0;   
   } 
+  
+} 
+
+
+/* e katalog içerisi */
+#ekatalog .media.service-box {
+  margin: 25px 0 36px;
+  padding: 20px;
+  padding-left: 86px;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 0 0 20px 0; 
+  border: #F9690B 2px ;
+  text-align: center;
 }
