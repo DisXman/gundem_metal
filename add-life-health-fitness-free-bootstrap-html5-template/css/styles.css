@@ -280,7 +280,7 @@ color: #07f84f;
 
 #hero-banner{
   overflow: hidden;
-  height: 900px;
+  height: 810px;
   background: url('../resimler/anafoto.jpg');
   background-size: cover;
   background-position: center -200px;
@@ -998,7 +998,7 @@ padding: 7px 0 0;
   #hero-banner{
     overflow: hidden;
     height: 400px;
-    background: url('../resimler/anafoto.jpg');
+    /* background: url('../resimler/anafoto.jpg'); */
     background-size: cover;
     color:#fff;
   }
@@ -1058,4 +1058,8 @@ padding: 7px 0 0;
   border-radius: 0 0 20px 0; 
   border: #F9690B 2px ;
   text-align: center;
+}
+
+.solayatik{
+  text-align: justify;
 }
