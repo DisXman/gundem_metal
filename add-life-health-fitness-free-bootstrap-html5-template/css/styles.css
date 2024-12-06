@@ -389,15 +389,15 @@ color:#F9690E;
   margin-top: 80px;
 }
 #services, #features {
-  padding: 100px 0 75px;
+  padding: 100px 0 75px; 
 }
 .media.service-box {
   margin: 25px 0 36px;
   padding: 20px;
   padding-left: 86px;
-  position: relative;
+  position: relative ;
   background: #FFFFFF;
-  border-radius: 0 0 20px 0;
+  border-radius: 0 0 0 0;
   border: #F9690B 2px solid;
 }
 .media.service-box .pull-left {
