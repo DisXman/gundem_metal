@@ -142,7 +142,7 @@ border-radius: 0;
 }
 
 .navbar-nav>li>a {
-text-transform: uppercase;
+text-transform:  uppercase;
 }
 @-webkit-keyframes scaleIn {
   0% {
@@ -228,7 +228,8 @@ color: #07f84f;
     border-bottom: 4px solid transparent;
 }
   .navbar-default .navbar-nav>li>a {
-	color: rgb(255, 255, 255);
+	/* color: rgb(255, 255, 255); */
+  color: black;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5rem;
 	}
@@ -281,10 +282,11 @@ color: #07f84f;
 #hero-banner{
   overflow: hidden;
   height: 810px;
-  background: url('../resimler/anafoto.jpg');
+  /* background: url('../resimler/anafoto.jpg'); */
   background-size: cover;
   background-position: center -200px;
   color:#fff;
+  margin-top: 15rem;
 }
 #hero-banner.item {
   height: 558px;
@@ -333,6 +335,27 @@ color:#F9690E;
 #hero-text .btn {
   margin-top: 40px;
 }
+#hero-banner .slogan{
+  text-align: center;
+  font-style: italic;
+  text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.7);
+}
+#hero-banner .slogan h1{
+  font-size: 8rem;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 6px;
+  color:  #F9690B;
+}
+#anaresim:hover{
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5), -20px -20px 15px rgba(0, 0, 0, 0.3);  
+  transition: box-shadow 500ms ease;
+
+}
+
+
+
+
+
 #cta2 {
   background: #45b1da;
   color: #fff;
@@ -565,6 +588,7 @@ margin-bottom: 15px;
   color: #fff;
   background:/* url('../resimler/hizmetlerimiz_arka.jpg');*/#7c92a6;
   background-size: cover; 
+  margin-top: 5rem;
 }
 #testimonial h2{ 
 color: #F9690E;
