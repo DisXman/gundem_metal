@@ -61,8 +61,12 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 text-shadow: 5px 5px 4px gray;
 
 }
+input{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 p{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
 }
 ::placeholder{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -352,7 +356,7 @@ color:#F9690E;
   letter-spacing: 6px;
   color:  #F9690B;
 }
-#anaresim:hover{
+#anaresim{
   box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5), -20px -20px 15px rgba(0, 0, 0, 0.3);  
   transition: box-shadow 500ms ease;
 
