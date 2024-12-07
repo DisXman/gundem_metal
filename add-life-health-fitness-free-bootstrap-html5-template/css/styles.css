@@ -241,7 +241,7 @@ color: #07f84f;
 	/* color: rgb(255, 255, 255); */
   color: black;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 	}
   #main-nav.navbar-default .navbar-nav > li.active > a,
 
@@ -359,7 +359,10 @@ color:#F9690E;
 #anaresim{
   box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5), -20px -20px 15px rgba(0, 0, 0, 0.3);  
   transition: box-shadow 500ms ease;
-
+  border:  3px black; width: auto; border-radius: 5px;
+}
+#anaresim img{
+  object-fit: contain; width: 110rem;
 }
 
 
@@ -384,7 +387,7 @@ color:#F9690E;
 }
 #features h2, #portfolio p{ color: #C3C3C3;}
 #features {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   background: #FFFFFF;
   color: #000;
 }
@@ -404,6 +407,23 @@ color:#F9690E;
   border-radius: 0 0 0 0;
   border: #F9690B 2px solid;
 }
+
+#proje .container .row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* width: 200rem; */
+}
+
+#proje  img{
+  object-fit: contain;
+  width: 27rem;
+  /* height:20rem; */
+}
+#proje h4{
+  text-align: center;
+}
+
 .media.service-box .pull-left {
   margin-right: 20px;
 }
@@ -1074,11 +1094,11 @@ padding: 7px 0 0;
     font-size: 40px;
   }
   #testimonial {
-    background: url('../resimler/kaynak_arka.webp');
+    /* background: url('../resimler/kaynak_arka.webp');  */
     background-size: cover;
     background-position: -800px 0;   
   } 
-  
+
 } 
 
 
@@ -1096,4 +1116,148 @@ padding: 7px 0 0;
 
 .solayatik{
   text-align: justify;
+}
+
+
+
+/*GALERİ*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.photo {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Pop-up için stiller */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup:target {
+  display: flex;
+}
+
+.close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+/* galeri bitiş */
+
+@media (max-width:768px){
+  #anaresim img{
+    width: 30rem;
+    height: 20rem;
+  }
+  #hero-banner{
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+
+  }
+  #hero-banner .slogan h1{
+   font-size: 2rem; 
+  }
+
+  #proje .container .row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* width: 200rem; */
+  }
+}
+
+/* Navbar Menüdeki Elemanları Düzenle */
+@media (max-width: 768px) {
+  .navbar-collapse {
+      background-color: #333; /* Navbar arka planı */
+      height: 120vh;
+
+  }
+
+  .navbar-toggle {
+      display: block; /* Hamburger menüyü görünür yap */
+  }
+
+  .navbar-collapse {
+      display: none; /* Başlangıçta menü gizlenir */
+  }
+
+  .navbar-collapse.collapse {
+      display: block; /* Hamburger menü tıklandığında menü görünür */
+  }
+
+  .navbar-nav li {
+    padding: 15px 0;
+}
+.navbar-nav li a {
+  display: block;   /* A etiketi üzerine tam oturabilmesi için */
+  padding: 15px ;
+  height: 7rem; 
+}
+.navbar-nav li a:hover {
+  background-color: #555;  /* Hover efekti ekleyebilirsin */
+}
 }
